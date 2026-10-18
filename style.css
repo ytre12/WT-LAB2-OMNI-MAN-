@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sekuya&display=swap");
+
+body {
+  font-family: "Oswald";
+  background: #0e131c;
+}
+
+header {
+  background: #590f10;
+  margin: 30px 30px;
+  border-color: #861916;
+  border-style: solid;
+  border-width: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  margin: 0px;
+}
+
+h2 {
+  color: #70cdf0;
+  font-weight: 300;
+  margin: 0px;
+}
+
+h3,
+h4 {
+  margin: 5px;
+  font-family: "Sekuya", "OpenSans";
+  color: white;
+}
+
+p {
+  color: #6f86a6;
+  font-size: 22px;
+  margin: 0px;
+}
+
+a {
+  color: #c2c3c5;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-color: #8d1216;
+  text-decoration-thickness: 4px;
+}
+
+a:hover {
+  color: white;
+  transform: scale(0.9);
+}
+
+nav {
+  margin-inline: 60px;
+  display: flex;
+  gap: 60px;
+}
+
+button {
+  padding: 15px 40px;
+  font-family: "Sekuya", "OpenSans";
+  margin-top: 30px;
+  background-color: #9e1418;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  color: white;
+}
+
+button:hover {
+  transform: scale(0.95);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.active {
+  color: white;
+}
+
+.main-text {
+  font-family: "Sekuya", "OpenSans";
+  font-size: 72px;
+}
+
+.header-content {
+  margin: 60px 60px;
+}
+
+.hero {
+  min-height: 500px;
+  background: #0e131c url("./img/Omni-Man.png") right bottom / contain no-repeat;
+}
+
+.line {
+  background-color: #590f10;
+  height: 4px;
+  width: 100px;
+}
+
+.second-h {
+  margin: 10px 0px 20px 60px;
+  font-size: 25px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  margin-inline: 60px;
+}
+
+.card {
+  background-color: #590f10b2;
+  border-radius: 5px;
+  border-color: #9e1418;
+  border-width: 1px;
+  border-style: solid;
+  padding: 30px;
+}
+
+.card:hover {
+  transform: scale(0.99);
+}
+
+footer {
+  margin: 60px 60px 30px 60px;
+  border-style: solid;
+  border-color: #9e1418;
+  border-width: 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.mobile-on {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  button {
+    padding: 15px 35px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .main-text {
+    font-size: 62px;
+  }
+
+  button {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: none;
+    min-height: auto;
+  }
+
+  .mobile-on {
+    display: block;
+  }
+
+  .header-content {
+    margin: 40px 40px 0px 40px;
+  }
+
+  header {
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .main-text {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards {
+    margin-inline: 40px;
+  }
+
+  .second-h {
+    margin-left: 40px;
+  }
+
+  footer {
+    margin: 30px 40px 30px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 5px 10px;
+  }
+
+  .main-text {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 11px;
+    padding: 7px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  nav {
+    gap: 40px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  p {
+    font-size: 12px;
+  }
+
+  .cards {
+    margin-inline: 25px;
+  }
+
+  footer {
+    margin: 20px 25px 20px 25px;
+  }
+
+  .second-h {
+    margin: 10px 0px 20px 25px;
+  }
+
+  .header-content {
+    margin-inline: 25px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .main-text {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
