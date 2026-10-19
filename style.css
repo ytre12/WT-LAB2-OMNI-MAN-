@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sekuya&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Oswald";
   background: #0e131c;
