@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sekuya&display=swap");
 
+:root {
+  --bg-color: #0e131c;
+  --blue-color: #70cdf0;
+  --p-color: #6f86a6;
+  --header-bg: #590f10;
+  --card-bg: #590f10;
+  --a-color: #c2c3c5;
+  --a-active: #fff;
+  --set-btn-color: #fff;
+  --input-bg: #000;
+}
+
 body.light-theme {
   --bg-color: #c5c5c5;
   --blue-color: #3645a2;
