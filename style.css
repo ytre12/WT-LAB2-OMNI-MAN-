@@ -1,16 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sekuya&display=swap");
 
+body.light-theme {
+  --bg-color: #c5c5c5;
+  --blue-color: #3645a2;
+  --p-color: #252c37;
+  --header-bg: #ba1315;
+  --card-bg: #b0282aaa;
+  --a-color: #000000;
+  --a-active: #3331c9;
+  --set-btn-color: #000;
+  --input-bg: #ba1315;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Oswald";
-  background: #0e131c;
+  background: var(--bg-color);
 }
 
 header {
-  background: #590f10;
+  background: var(--header-bg);
   margin: 30px 30px;
   border-color: #861916;
   border-style: solid;
@@ -29,7 +41,7 @@ h1 {
 }
 
 h2 {
-  color: #70cdf0;
+  color: var(--blue-color);
   font-weight: 300;
   margin: 0px;
 }
@@ -42,13 +54,13 @@ h4 {
 }
 
 p {
-  color: #6f86a6;
+  color: var(--p-color);
   font-size: 22px;
   margin: 0px;
 }
 
 a {
-  color: #c2c3c5;
+  color: var(--a-color);
   font-size: 20px;
   font-weight: 200;
   text-decoration: underline;
@@ -88,12 +100,13 @@ button:active {
 }
 
 .active {
-  color: white;
+  color: var(--a-active);
 }
 
 .main-text {
   font-family: "Sekuya", "OpenSans";
   font-size: 72px;
+  color: white;
 }
 
 .header-content {
@@ -102,7 +115,8 @@ button:active {
 
 .hero {
   min-height: 500px;
-  background: #0e131c url("./img/Omni-Man.png") right bottom / contain no-repeat;
+  background: var(--bg-color) url("./img/Omni-Man.png") right bottom / contain
+    no-repeat;
 }
 
 .line {
@@ -123,7 +137,7 @@ button:active {
 }
 
 .card {
-  background-color: #590f10b2;
+  background-color: var(--card-bg);
   border-radius: 5px;
   border-color: #9e1418;
   border-width: 1px;
@@ -142,12 +156,70 @@ footer {
   border-width: 1px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
+}
+
+.box {
+  margin: 60px 60px 30px 60px;
+  border-style: solid;
+  border-color: #9e1418;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  background: var(--input-bg);
+  border-style: solid;
+  border-color: #9e1418;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: "Oswald";
+}
+
+.review {
+  width: 300px;
+  background-color: var(--card-bg);
+  padding: 20px;
+  margin: 10px;
+  border-style: solid;
+  border-color: #9e1418;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-on {
   display: none;
   width: 100%;
+}
+
+#setThem {
+  padding: 10px;
+  font-size: 12px;
+  color: text;
+  margin: 0px;
+  background-color: var(--bg-color);
+  color: var(--set-btn-color);
+  border-style: solid;
+  border-color: #9e1418;
+  border-width: 1px;
 }
 
 @media (max-width: 1280px) {
@@ -158,6 +230,11 @@ footer {
 }
 
 @media (max-width: 990px) {
+  #setThem {
+    padding: 7px;
+    font-size: 10px;
+  }
+
   .main-text {
     font-size: 62px;
   }
@@ -255,6 +332,14 @@ footer {
   footer {
     margin: 30px 40px 30px 40px;
   }
+
+  input {
+    width: 200px;
+  }
+
+  .box {
+    margin-inline: 40px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -298,11 +383,40 @@ footer {
   .card {
     padding: 20px;
   }
+
+  input {
+    width: 150px;
+    padding: 3;
+    font-size: 10px;
+  }
+
+  .review {
+    width: 220px;
+    padding: 15px;
+  }
+
+  #setThem {
+    padding: 5px;
+    font-size: 8px;
+  }
+
+  .box {
+    margin-inline: 40px;
+  }
 }
 
 @media (max-width: 370px) {
+  .review {
+    width: 200px;
+    padding: 10px;
+  }
+
   p {
     font-size: 12px;
+  }
+
+  .box {
+    margin-inline: 25px;
   }
 
   .cards {
@@ -339,5 +453,9 @@ footer {
 
   p {
     font-size: 12px;
+  }
+
+  input {
+    width: 120px;
   }
 }
